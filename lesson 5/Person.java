@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Person {
 
     private String fio;
@@ -9,7 +7,7 @@ public class Person {
     private double salary;
     private int age;
 
-    Person(String fio, String post, String email, String tel, double salary, int age) {
+    public Person(String fio, String post, String email, String tel, double salary, int age) {
         this.fio = fio;
         this.post = post;
         this.email = email;
@@ -22,11 +20,11 @@ public class Person {
         }
     }
 
-    int GetAge() {
+    public int GetAge() {
         return age;
     }
 
-    void Show() {
+    public void Show() {
         System.out.println(fio + " " + post + " " +  email + " " + tel + " " + salary + " " + age);
     }
 }
