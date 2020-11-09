@@ -1,10 +1,17 @@
-abstract class Animal {
+class Animal {
+    public String name;
+    public int run;
 
-    private final int RunLength = 0;
-    private final int SwimLength = 0;
-    private final double JumpHeight = 0;
+    public Animal() {
+    }
 
-    abstract void run(int length);
-    abstract void swim(int length);
-    abstract void jump(double height);
+    public Animal(String name) {
+        this.name = name;
+    }
+
+    public void animalInfo() {
+        System.out.println();
+
+    }
 }
+ 

@@ -1,23 +1,17 @@
-public class Dog extends Animal {
+class Dog extends Animal {
 
-    private int RunLength = 500;
-    private int SwimLength = 10;
-    private double JumpHeight = 0.5;
+    public double jump;
+    public int swim;
 
-    @Override
-    void run(int length) {
-        if ((length >= 0) && (length <= RunLength)) System.out.println("run: true");
+
+
+    public Dog(String name, int run, int swim, double jump ) {
+        this.name = name;
+        this.run = run;
+        this.swim = swim;
+        this.jump = jump;
     }
-
-    @Override
-    void swim(int length) {
-        if ((length >= 0) && (length <= SwimLength)) System.out.println("swim: true");
-        else System.out.println("swim: false");
-    }
-
-    @Override
-    void jump(double height) {
-        if ((height >= 0) && (height <= JumpHeight)) System.out.println("jump: true");
-        else System.out.println("jump: false");
+    public void dogInfo() {
+        System.out.println("DogName: " + name  + " /RunLimit: " + run+ " meters/" + " /Swim:" + swim + " /Jump: " +jump+ " meters/");
     }
 }
